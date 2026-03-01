@@ -21,7 +21,7 @@ def is_enabled(value, default):
 API_ID = int(environ.get('API_ID', '33276508'))
 API_HASH = environ.get('API_HASH', 'e0b0092faca018e16c5ad30573290412')
 BOT_TOKEN = environ.get('BOT_TOKEN', '8734597126:AAEABw5p4umiJ5aqWpyahJQy_DHDjMW3tu8')
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS'8055522383').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '8055522383').split()]
 USERNAME = environ.get('USERNAME', 'https://telegram.me/TechifyGuru')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
