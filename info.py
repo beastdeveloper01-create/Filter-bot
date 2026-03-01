@@ -18,15 +18,15 @@ def is_enabled(value, default):
         return default
 
 #main variables
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
+API_ID = int(environ.get('API_ID', '33276508'))
+API_HASH = environ.get('API_HASH', 'e0b0092faca018e16c5ad30573290412')
+BOT_TOKEN = environ.get('BOT_TOKEN', '8734597126:AAEABw5p4umiJ5aqWpyahJQy_DHDjMW3tu8')
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS'8055522383').split()]
 USERNAME = environ.get('USERNAME', 'https://telegram.me/TechifyGuru')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://BEAST:developer@cluster0.jr7p2qe.mongodb.net/?appName=Cluster0")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://Bosshub:JMaff0WvazwNxKky@cluster0.l0xcoc1.mongodb.net/?appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Rahul")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Rahul')
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', ''))
